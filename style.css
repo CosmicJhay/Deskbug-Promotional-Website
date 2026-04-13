@@ -269,16 +269,38 @@ h3 {
   background: rgba(255, 255, 255, 0.05);
 }
 
-/* IMAGE RIGHT */
+/* CONTAINER */
 .hero-img {
+  position: relative;
   display: flex;
-  justify-content: flex-end; /* PUSH IMAGE TO RIGHT */
+  justify-content: flex-end;
 }
 
-.hero-img img {
+/* BACK IMAGE */
+.back-img {
   width: 550px;
   max-width: 100%;
   border-radius: 15px;
+
+  /* effect */
+  filter: blur(2px);
+  opacity: 0.8;
+}
+
+/* FRONT IMAGE */
+.front-img {
+  position: absolute;
+  top: 60px;     /* adjust this */
+  left: 0;       /* adjust this */
+
+  width: 500px;
+  border-radius: 15px;
+
+  /* floating look */
+  box-shadow: 0 25px 80px rgba(123, 44, 255, 0.6);
+
+  /* slight tilt like your design */
+  transform: rotate(-3deg);
 }
 
 
@@ -390,10 +412,57 @@ h3 {
 }
 
 .download-card {
-  padding: 32px;
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  border-radius: 20px;
+
+  /* glass + gradient */
   background:
-    radial-gradient(circle at top right, rgba(88, 210, 255, 0.1), transparent 28%),
-    rgba(255, 255, 255, 0.05);
+    radial-gradient(circle at top right, rgba(88, 210, 255, 0.08), transparent 30%),
+    linear-gradient(135deg, rgba(20, 30, 50, 0.9), rgba(10, 15, 30, 0.95));
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+
+  color: #cbd5f5;
+}
+
+/* COLUMN */
+.column {
+  flex: 1;
+}
+
+/* TITLE */
+.column h3 {
+  margin-bottom: 16px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+/* LIST */
+.column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.column li {
+  margin-bottom: 12px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* BULLET STYLE */
+.column li::before {
+  content: "•";
+  margin-right: 2px;
+  color: #8ab4ff;
+}
+
+/* DIVIDER LINE */
+.divider {
+  width: 1px;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .download-card h3 {
@@ -402,7 +471,7 @@ h3 {
 
 .download-card ul {
   margin: 0;
-  padding-left: 20px;
+  padding-left: 1px;
 }
 
 .download-card li + li {
