@@ -76,7 +76,7 @@ img {
 }
 
 #top {
-  scroll-margin-top: 140px;
+  scroll-margin-top: 160px;
 }
 
 .brand {
@@ -152,7 +152,7 @@ section {
   grid-template-columns: 1fr 1fr;
   align-items: center; /* CENTER vertically */
   gap: 60px;
-  padding: 40px 1%; /*Padding ng hero*/
+  padding: 45px 1%; /*Padding ng hero*/
 }
 
 
@@ -190,7 +190,14 @@ h1 {
 }
 
 
-
+.eyebrow {
+  margin: 0 0 0px;
+  color: var(--mint);
+  font-size: 0.90rem;
+  font-weight: 800;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+}
 h2 {
   max-width: 15ch;
   font-size: clamp(2rem, 3vw, 3rem);
@@ -313,7 +320,7 @@ h3 {
 
 .section-title {
   display: grid;
-  gap: 14px;
+  gap: 3px;
   max-width: 760px;
 }
 
@@ -541,7 +548,7 @@ h3 {
 }
 
 .demo-text p {
-  font-size: 12px;
+  font-size: 16px;
   color: #b1bdd9;
   line-height: 1.6;
 }
